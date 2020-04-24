@@ -11,9 +11,9 @@ A board full of overturned cards. There is a pair for each card. The player flip
 
 ## Screenshots
 
-![Playing](https://github.com/jttuboi/memory-puzzle/blob/master/Screenshot_1.png)
+![Playing](Screenshot_1.png)
 
-![End game](https://github.com/jttuboi/memory-puzzle/blob/master/Screenshot_2.png)
+![End game](Screenshot_2.png)
 
 
 ## References
