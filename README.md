@@ -8,6 +8,14 @@ Godot version: 3.2.1
 
 A board full of overturned cards. There is a pair for each card. The player flips over two cards. If they match, then they stay overturned. Otherwise they flip back. The player needs to overturn all the cards in the fewest moves to win.
 
-## Link
+
+## Screenshots
+
+![Playing](https://github.com/jttuboi/memory-puzzle/blob/master/Screenshot_1.png)
+
+![End game](https://github.com/jttuboi/memory-puzzle/blob/master/Screenshot_2.png)
+
+
+## References
 
 https://inventwithpython.com/blog/2012/02/20/i-need-practice-programming-49-ideas-for-game-clones-to-code/
