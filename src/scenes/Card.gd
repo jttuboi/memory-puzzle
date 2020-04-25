@@ -1,5 +1,7 @@
 extends Area2D
 
+class_name Card
+
 signal flipped(card)
 
 var _flipped := false
@@ -90,8 +92,8 @@ func _on_Card_input_event(viewport: Node, event: InputEvent, shape_idx: int):
 # yield(_create_timer(0.1), 'timeout')
 # print('after')
 ###############################################################################
-func _create_timer(wait_time):
-	var timer = Timer.new()
+func _create_timer(wait_time: float):
+	var timer := Timer.new()
 	timer.set_wait_time(wait_time)
 	timer.set_one_shot(true)
 	timer.connect("timeout", timer, "queue_free")

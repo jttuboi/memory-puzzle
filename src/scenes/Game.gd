@@ -1,7 +1,7 @@
 extends Node
 
 var _number_cards_flipped := 0
-var _first_flipped_card: Area2D
+var _first_flipped_card: Card
 
 onready var Cards := $Cards
 onready var HUD := $HUD
@@ -37,12 +37,12 @@ func _unflip_all_cards():
 		card.unflip()
 
 
-func _cards_are_the_same(card: Area2D):
+func _cards_are_the_same(card: Card):
 	card.flip()
 	_first_flipped_card = null
 
 
-func _cards_are_different(card: Area2D):
+func _cards_are_different(card: Card):
 	card.flip()
 	_first_flipped_card.unflip()
 	card.unflip()
@@ -66,7 +66,7 @@ func _check_end_game():
 		HUD.show_message()
 
 
-func _on_Card_flipped(card: Area2D):
+func _on_Card_flipped(card: Card):
 	if _first_flipped_card == null:
 		_first_flipped_card = card
 		_first_flipped_card.flip()
